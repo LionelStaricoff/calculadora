@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div>
+        <form action="calculadora" name="ans" value="" autocomplete="off" readonly>
+        <input type="textfield" class="textfield">
+        <br>
+        <input type="button" value="7">
+        <input type="button" value="8"onclick="document.calculadora.ans.value+=`8`">
+        <input type="button" value="9"onclick="document.calculadora.ans.value+=`9`">
+        <input type="button" value="+"onclick="document.calculadora.ans.value+=`+`">
+        <br>
+        <input type="button" value="4"onclick="document.calculadora.ans.value+=`4`">
+        <input type="button" value="5"onclick="document.calculadora.ans.value+=`5`">
+        <input type="button" value="6"onclick="document.calculadora.ans.value+=`6`">
+        <input type="button" value="-"onclick="document.calculadora.ans.value+=`-`">
+        <br>
+        <input type="button" value="1"onclick="document.calculadora.ans.value+=`1`">
+        <input type="button" value="2"onclick="document.calculadora.ans.value+=`2`">
+        <input type="button" value="3"onclick="document.calculadora.ans.value+=`3`">
+        <input type="button" value="x"onclick="document.calculadora.ans.value+=`*`">
+        <br>
+        <input type="button" value="0"onclick="document.calculadora.ans.value+=`0`">
+        <input type="reset" value="c">
+        <input type="button" value="="onclick="document.calculadora.ans.value= eval(document.calculadora.ans.value)">
+        <input type="button" value="/"onclick="document.calculadora.ans.value+=`/`">
+
+
+    </form>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
