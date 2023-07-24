@@ -1,4 +1,13 @@
-function marcarNumero(){
-    let numero = 
-   document.calculadora.ans.value+='7'"
+let input = document.querySelectorAll("input");
+
+function agregarAPantalla(numero){
+    input[0].value += numero;
 }
+
+
+
+function ejecutar(){
+    input[0].value =eval(input[0].value);
+}
+
+
