@@ -11,29 +11,37 @@
     <div>
         <form action="calculadora" name="ans" value="" autocomplete="off" readonly>
         <input value="" type="textfield" disabled class="textfield">
-        <br>
+        <input type="button" value="historial" onclick="historial()" >
+       
         <input type="button" value="7" onclick="agregarAPantalla(7)">
         <input type="button" value="8" onclick="agregarAPantalla(8)">
         <input type="button" value="9" onclick="agregarAPantalla(9)">
-        <input type="button" value="+" onclick="agregarAPantalla('+')">
-        <br>
+        <input type="reset" value="c">
+        <input type="button" value=← onclick="borrar()">
+     
         <input type="button" value="4" onclick="agregarAPantalla(4)">
         <input type="button" value="5"onclick="agregarAPantalla(5)">
         <input type="button" value="6"onclick="agregarAPantalla(6)">
         <input type="button" value="-" onclick="agregarAPantalla(`-`)">
-        <br>
+        <input type="button" value="+" onclick="agregarAPantalla('+')">
+       
         <input type="button" value="1"onclick="agregarAPantalla(1)">
         <input type="button" value="2"onclick="agregarAPantalla(2)">
         <input type="button" value="3" onclick="agregarAPantalla(3)">
         <input type="button" value="x" onclick="agregarAPantalla('*')">
-        <br>
-        <input type="button" value="0"onclick="agregarAPantalla(0)">
-        <input type="reset" value="c">
-        <input type="button" value="=" onclick="ejecutar()">
         <input type="button" value="/"onclick="agregarAPantalla('/')">
+     
+        <input type="button" value="0"onclick="agregarAPantalla(0)">
+        <input type="button" value="("onclick="agregarAPantalla('(')">
+        <input type="button" value=")" onclick="agregarAPantalla(`)`)">
+        <input type="button" value="."onclick="agregarAPantalla('.')">
+        <input type="button" value="=" onclick="llamarAlIgual()" >
 
 
     </form>
+    <div id="menuhistorial">
+        
+    </div>
     </div>
 </body>
 <script src="index.js" defer></script>

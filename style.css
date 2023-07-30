@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: all 2s;
+    transition: all .5s;
+  
 }
 
 div{
@@ -10,24 +11,74 @@ div{
     display: flex;
     justify-content: center;
     align-items: center; 
-    background-color: rgb(0, 255, 13);
+    background-color: rgb(0, 255, 13,50%);
 }
 form{
     width: 20em;
     height: 20em;
-    background-color: aqua;
+    background-color: rgb(0, 255, 255,50%);
     text-align: center;
+    border-bottom-left-radius: 15px;
+    box-shadow: 5px 5px 5px 5px black;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.textfield{
+    background-color: rgb(138, 43, 226,70%);
+    width: 75%;
+    color: aliceblue;
+ }
 
 form input{
     width: 4em;
     height: 4em;
     margin: 0.4em;
     border-bottom-left-radius: 15px;
+    box-shadow: 5px 5px 5px 2px rgb(83, 122, 228);
+}
+form input[type=textfield]:hover{
+    transform: none;
 }
 
-.textfield{
-   background-color: blueviolet;
-   width: 90%;
-   color: aliceblue;
+
+form input:hover{
+    transform: scale(0.9);
+    
+}
+
+div div{
+    width: 30%;
+    height: 20em;
+    margin: 0 0 0 1em;
+    box-shadow: 5px 5px 5px 5px rgb(0, 0, 0);
+    border: 3px solid rgb(149, 21, 235,80%) ;
+    background-image: url(extraterrestre.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+     overflow: scroll;
+     border: 42px solid black;
+     border-image-width: 42px;
+     border-image-source: url(extraterrestre.png);
+     border-image-slice: 110;
+     border-image-outset: 0px;
+     border-image-repeat: repeat;
+     border-image: url(extraterrestre.png);
+     display: none;
+
+}
+  
+
+div div input{
+width: 100%;
+height: 2em;
+}
+.btn{
+   opacity: 50%;
 }
