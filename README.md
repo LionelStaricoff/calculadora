@@ -1,6 +1,6 @@
 # calculadora
-<pre>En el HTML se puede observar la que cada input posee un value para que se vea en la parte visual,
-  cada input posee un efecto click para ejecutar su comonado.
+<pre>En el HTML se puede observar que cada input posee un value para que se vea en la parte visual y,
+  cada input posee un efecto click para ejecutar su comando.
 </pre>
 <p><scrip>agregarPantalla(dato)</scrip>: agrega el valor del input a la pantalla</p>
 <pre> <scrip>ejecutar()</scrip>: toma los datos de la pantalla y ejecuta la funcion eval() que ,
